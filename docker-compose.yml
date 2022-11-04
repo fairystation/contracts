@@ -1,0 +1,9 @@
+version: '3'
+services:
+    ganache:
+        image: shivergard/ganache
+        container_name: ganache
+        volumes:
+            - './:/app'
+        ports:
+            - "8545:8545"
