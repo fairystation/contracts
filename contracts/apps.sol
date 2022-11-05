@@ -12,10 +12,10 @@ contract apps is ERC721 {
     }
 
     function mint(string memory _app) public {
-        require(
-        msg.sender == owner,
-        "This function is restricted to the contract's owner!"
-        );
+        //require(
+        //msg.sender == owner,
+        //"This function is restricted to the contract's owner!"
+        //);
         uint _id = appList.length;
         appList.push(_app);
         _mint(msg.sender, _id);
