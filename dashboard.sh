@@ -1,0 +1,1 @@
+docker exec ganache sh -c "truffle dashboard --host 0.0.0.0"
